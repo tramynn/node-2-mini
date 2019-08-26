@@ -1,9 +1,11 @@
 const express = require("express");
+const bc = require("./controllers/books_controller");
 const app = express();
-const books = require("./controllers/books_controller");
 const PORT = 5252;
 
 app.use(express.json());
+
+app.get('/api/books', );
 
 app.listen(PORT, () => 
     {
